@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital SMP Negeri 1 Rantau Pulung</title>
+    <!-- Favicon Icon Website -->
+    <link rel="icon" type="image/x-icon" href="Downloads/icon.jpeg">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Animasi Slideshow 3 Foto Background Bergeser Otomatis */
+        @keyframes slideShow {
+            0% { 
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200'); 
+            }
+            33% { 
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200'); 
+            }
+            66% { 
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1568667256549-094345857637?w=1200'); 
+            }
+            100% { 
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200'); 
+            }
+        }
+        .hero-slideshow {
+            background-size: cover;
+            background-position: center;
+            animation: slideShow 15s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-blue-700 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-book-open-reader text-2xl text-yellow-300"></i>
+                    <span class="font-bold text-lg sm:text-xl">PerpusTaka SMPN 1</span>
+                </div>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#beranda" class="hover:text-yellow-300 transition">Beranda</a>
+                    <a href="#visi-misi" class="hover:text-yellow-300 transition">Visi & Misi</a>
+                    <a href="#pengumuman" class="hover:text-yellow-300 transition">Pengumuman</a>
+                    <a href="#katalog" class="hover:text-yellow-300 transition">Katalog Buku</a>
+                    <a href="#struktur" class="hover:text-yellow-300 transition">Struktur</a>
+                    <a href="#informasi" class="hover:text-yellow-300 transition">Aturan & Jam</a>
+                    <a href="#lokasi" class="hover:text-yellow-300 transition">Kontak & Lokasi</a>
+                </div>
+                <div>
+                    <a href="#katalog" class="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded-lg text-sm shadow hover:bg-yellow-300 transition">Cari Buku</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION DENGAN 3 FOTO BERGESER OTOMATIS & TEKS BERJALAN -->
+    <header id="beranda" class="hero-slideshow text-white py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <!-- Teks Berjalan -->
+            <marquee class="bg-yellow-400 text-blue-900 font-bold py-1 px-4 rounded-full text-sm mb-6 shadow-inner" scrollamount="6">
+                ✨ Selamat Datang di Perpustakaan Digital SMP Negeri 1 Rantau Pulung - Mari Budayakan Membaca Buku Setiap Hari! ✨
+            </marquee>
+
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 drop-shadow-md">Pusat Literasi & Pengetahuan Siswa</h1>
+            <p class="text-blue-100 text-base sm:text-lg mb-8 drop-shadow">"Membaca adalah jendela dunia. Temukan ribuan pengetahuan, buku pelajaran, dan cerita menarik di sini."</p>
+            
+            <!-- Search Bar -->
+            <div class="bg-white p-2 rounded-xl shadow-lg flex items-center max-w-xl mx-auto">
+                <i class="fa-solid fa-search text-gray-400 px-3"></i>
+                <input type="text" id="searchInput" placeholder="Cari judul buku atau penulis (contoh: Matematika, Laskar Pelangi)..." class="w-full focus:outline-none text-gray-700 text-sm">
+                <button onclick="alert('Fitur pencarian aktif!')" class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">Cari</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BAGIAN VISI & MISI PERPUSTAKAAN -->
+    <section id="visi-misi" class="max-w-7xl mx-auto px-4 py-12">
+        <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm">
+            <div class="text-center mb-8">
+                <i class="fa-solid fa-bullseye text-blue-600 text-3xl mb-2"></i>
+                <h2 class="text-2xl font-bold text-gray-800">Visi & Misi Perpustakaan</h2>
+                <p class="text-sm text-gray-500 mt-1">Komitmen kami dalam memajukan budaya literasi sekolah</p>
+            </div>
+
+            <!-- Visi -->
+            <div class="mb-8 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl">
+                <h3 class="text-lg font-bold text-blue-900 mb-2 flex items-center">
+                    <i class="fa-solid fa-eye mr-2"></i> Visi
+                </h3>
+                <p class="text-gray-700 italic text-sm sm:text-base leading-relaxed">
+                    "Untuk meningkatkan ketaqwaan terhadap tuhan yang maha esa,kecerdasan dan keterampilan,mempertinggi budi pekerti dan mempertebal semangat kebangsaan dan cinta tanah air sehingga dapat menumbuhkan manusia-manusia pembangunan yang dapat membangun dirinya sendiri serta bersama-sama bertanggung jawab atas pembangunan bangsa berdasarkan sisitem pendidikan nasional yang berdasarkan pancasila dan UUD 1945."
+                </p>
+            </div>
+
+            <!-- Misi -->
+            <div>
+                <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-list-check mr-2 text-blue-600"></i> Misi (10 Poin Utama)
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">1</span>
+                        <p>Mengembangkan minat kemampuan dan kebiasaan membaca khususnya serta mendayagunakan budaya tulisan dalam segala sektor.</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">2</span>
+                        <p>Mengembangkan kemampuan mencari dan mengelolah serta memanfaatkan informasi.</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">3</span>
+                        <p>Mendidik siswa agar dapat memelihara dan memanfaatkan bahan pustaka secara tepat dan berhasil guna.</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">4</span>
+                        <p>Meletakan dasar- dasar kearah  belajar mandiri.</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">5</span>
+                        <p>Memupuk dan mengembangkan minat dan bakat siswa dalam segala aspek .</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">6</span>
+                        <p>Menumbuhkan penghargaan siswa terhadap pengalaman imajinatif.</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">7</span>
+                        <p>Mengembangkan kemampuan siswa untuk memecahkan masalah yang dihadapi atas tanggung jawab dan usaha sendiri .</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">8</span>
+                        <p>Membina kecintaan siswa terhadap buku dan ilmu pengetahuan melalui kegiatan bedah buku, lomba literasi, dan storytelling.</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">9</span>
+                        <p>Melakukan perawatan, pelestarian, dan inventarisasi bahan pustaka secara berkala agar awet dan tertib administrasi.</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="bg-blue-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs">10</span>
+                        <p>Menanamkan nilai-nilai karakter disiplin, tanggung jawab, dan kejujuran melalui tata tertib peminjaman di perpustakaan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN PENGUMUMAN SEKOLAH -->
+    <section id="pengumuman" class="max-w-7xl mx-auto px-4 py-8">
+        <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl shadow-sm">
+            <div class="flex items-center space-x-3 mb-3">
+                <i class="fa-solid fa-bullhorn text-amber-600 text-2xl"></i>
+                <h2 class="text-xl font-bold text-amber-800">Pengumuman Penting Perpustakaan</h2>
+            </div>
+            <ul class="list-disc list-inside space-y-2 text-sm text-gray-700">
+                <li><span class="font-semibold">Persiapan Pemecahan Rekor MURI & Tugas Literasi:</span> Seluruh siswa diingatkan untuk segera mempersiapkan diri dan melengkapi kebutuhan teknis kegiatan perpustakaan.</li>
+                <li><span class="font-semibold">Buku Baru Tiba:</span> Koleksi novel remaja dan buku sains terbitan terbaru sudah tersedia di rak utama perpustakaan mulai minggu ini.</li>
+                <li><span class="font-semibold">Jam Istirahat:</span> Layanan peminjaman dan pengembalian buku dilayani setiap jam istirahat sekolah dan sesudah jam pelajaran berakhir.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- KATEGORI POPULER -->
+    <section class="max-w-7xl mx-auto px-4 py-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Kategori Buku</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition border border-gray-100">
+                <i class="fa-solid fa-graduation-cap text-3xl text-blue-600 mb-3"></i>
+                <h3 class="font-semibold text-gray-700">Buku Pelajaran</h3>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition border border-gray-100">
+                <i class="fa-solid fa-dragon text-3xl text-purple-600 mb-3"></i>
+                <h3 class="font-semibold text-gray-700">Fiksi & Novel</h3>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition border border-gray-100">
+                <i class="fa-solid fa-globe text-3xl text-green-600 mb-3"></i>
+                <h3 class="font-semibold text-gray-700">Ensiklopedia</h3>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition border border-gray-100">
+                <i class="fa-solid fa-laptop-code text-3xl text-orange-600 mb-3"></i>
+                <h3 class="font-semibold text-gray-700">Teknologi & Sains</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- KATALOG BUKU -->
+    <section id="katalog" class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Katalog Buku Pilihan</h2>
+            <span class="text-sm text-gray-500">Menampilkan buku populer</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Buku 1 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=500" alt="Matematika" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded font-medium">Pelajaran</span>
+                        <h3 class="font-bold text-gray-800 mt-2">Matematika Kelas IX SMP</h3>
+                        <p class="text-sm text-gray-500 mt-1">Tim Kemendikbud</p>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <span class="inline-block w-full text-center bg-green-100 text-green-700 text-xs py-1.5 rounded font-semibold mb-2">Tersedia (5 Eksemplar)</span>
+                    <button class="w-full bg-blue-600 text-white text-sm py-2 rounded-lg hover:bg-blue-700 transition">Pinjam Buku</button>
+                </div>
+            </div>
+
+            <!-- Buku 2 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500" alt="Laskar Pelangi" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded font-medium">Fiksi</span>
+                        <h3 class="font-bold text-gray-800 mt-2">Laskar Pelangi</h3>
+                        <p class="text-sm text-gray-500 mt-1">Andrea Hirata</p>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <span class="inline-block w-full text-center bg-green-100 text-green-700 text-xs py-1.5 rounded font-semibold mb-2">Tersedia (2 Eksemplar)</span>
+                    <button class="w-full bg-blue-600 text-white text-sm py-2 rounded-lg hover:bg-blue-700 transition">Pinjam Buku</button>
+                </div>
+            </div>
+
+            <!-- Buku 3 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=500" alt="Ensiklopedia" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded font-medium">Ensiklopedia</span>
+                        <h3 class="font-bold text-gray-800 mt-2">Ensiklopedia Tubuh Manusia</h3>
+                        <p class="text-sm text-gray-500 mt-1">Dr. Richard</p>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <span class="inline-block w-full text-center bg-red-100 text-red-700 text-xs py-1.5 rounded font-semibold mb-2">Dipinjam</span>
+                    <button class="w-full bg-gray-300 text-gray-600 text-sm py-2 rounded-lg cursor-not-allowed" disabled>Habis</button>
+                </div>
+            </div>
+
+            <!-- Buku 4 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=500" alt="IPA Terpadu" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded font-medium">Sains</span>
+                        <h3 class="font-bold text-gray-800 mt-2">IPA Terpadu Kelas VIII</h3>
+                        <p class="text-sm text-gray-500 mt-1">Tim Erlangga</p>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <span class="inline-block w-full text-center bg-green-100 text-green-700 text-xs py-1.5 rounded font-semibold mb-2">Tersedia (4 Eksemplar)</span>
+                    <button class="w-full bg-blue-600 text-white text-sm py-2 rounded-lg hover:bg-blue-700 transition">Pinjam Buku</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRUKTUR ORGANISASI -->
+    <section id="struktur" class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2 text-center">Struktur Organisasi</h2>
+        <p class="text-center text-sm text-gray-500 mb-8">Pengelola Perpustakaan SMP Negeri 1 Rantau Pulung</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-100">
+                <img src="Downloads/kepsek.jpeg" alt="Kepala Sekolah" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300'">
+                <h3 class="font-bold text-gray-800 text-sm">H. IKBAL, S.Pd.</h3>
+                <p class="text-xs text-blue-600 font-medium mt-1">Penanggung Jawab / Kepala Sekolah</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-100">
+                <img src="Downloads/dinii.jpeg" alt="Kepala Perpustakaan" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300'">
+                <h3 class="font-bold text-gray-800 text-sm">DINI RATNA SARI, S.Pd.</h3>
+                <p class="text-xs text-indigo-600 font-medium mt-1">Kepala Perpustakaan</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-100">
+                <img src="Downloads/tika.jpeg" alt="Staf Layanan" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300'">
+                <h3 class="font-bold text-gray-800 text-sm">SARTIKA</h3>
+                <p class="text-xs text-green-600 font-medium mt-1">Staf Layanan & Administrasi</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-100">
+                <img src="Downloads/widi.jpeg" alt="Staf Layanan" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300'">
+                <h3 class="font-bold text-gray-800 text-sm">WIDIARNI, S.Pd.</h3>
+                <p class="text-xs text-green-600 font-medium mt-1">Staf Layanan & Administrasi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFORMASI & JAM OPERASIONAL -->
+    <section id="informasi" class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-clock text-blue-600 mr-3"></i> Jam Operasional Perpustakaan
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li class="flex justify-between border-b pb-2"><span>Senin - Kamis:</span> <span class="font-semibold text-gray-800">07:30 - 15:00 WITA</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Jumat:</span> <span class="font-semibold text-gray-800">07:30 - 11:30 WITA</span></li>
+                    <li class="flex justify-between"><span>Sabtu & Minggu:</span> <span class="font-semibold text-red-500">Tutup (Libur)</span></li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-circle-exclamation text-blue-600 mr-3"></i> Aturan Peminjaman
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-600 list-disc list-inside">
+                    <li>Setiap siswa wajib membawa Kartu Anggota Perpustakaan.</li>
+                    <li>Maksimal peminjaman buku adalah **3 buku** dalam waktu **1 minggu**.</li>
+                    <li>Keterlambatan pengembalian akan dikenakan denda sesuai aturan sekolah.</li>
+                    <li>Menjaga kebersihan buku dan tidak merusak halaman buku.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOKASI & KONTAK SOSIAL MEDIA -->
+    <section id="lokasi" class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2 text-center">Lokasi & Kontak Resmi</h2>
+        <p class="text-center text-sm text-gray-500 mb-8">Hubungi kami melalui media sosial atau kunjungi langsung lokasi perpustakaan.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Informasi Kontak & Sosmed -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
+                <h3 class="font-bold text-lg text-gray-800 border-b pb-2">Hubungi Kami</h3>
+                <div class="flex items-start space-x-3">
+                    <i class="fa-solid fa-map-location-dot text-blue-600 text-xl mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 text-sm">Alamat</h4>
+                        <p class="text-xs text-gray-600 mt-0.5">Jln. Ki Hajar Dewantara, Desa Kebon Agung, Kec. Rantau Pulung, Kab. Kutai Timur</p>
+                    </div>
+                </div>
+                <!-- Tombol Media Sosial (WA, IG, FB, YT, TikTok) -->
+                <div class="pt-2 space-y-2">
+                    <a href="https://wa.me/6285392181192" target="_blank" class="flex items-center justify-center space-x-2 bg-green-500 text-white text-sm font-medium py-2 rounded-lg hover:bg-green-600 transition">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> <span>WhatsApp (085392181192)</span>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="flex items-center justify-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-medium py-2 rounded-lg opacity-90 hover:opacity-100 transition">
+                        <i class="fa-brands fa-instagram text-lg"></i> <span>Instagram (perpus_smp1rantaupulung)</span>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="flex items-center justify-center space-x-2 bg-blue-600 text-white text-sm font-medium py-2 rounded-lg hover:bg-blue-700 transition">
+                        <i class="fa-brands fa-facebook text-lg"></i> <span>Facebook (Perpustakaan spansara)</span>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="flex items-center justify-center space-x-2 bg-red-600 text-white text-sm font-medium py-2 rounded-lg hover:bg-red-700 transition">
+                        <i class="fa-brands fa-youtube text-lg"></i> <span>YouTube (Perpussmpn1ranpul)</span>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="flex items-center justify-center space-x-2 bg-black text-white text-sm font-medium py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fa-brands fa-tiktok text-lg"></i> <span>TikTok (ruang baca smpn1 RPL)</span> 
+                    </a>       
+                </div>
+            </div>
+
+            <!-- Google Maps Asli -->
+            <div class="bg-gray-200 rounded-xl overflow-hidden shadow-sm md:col-span-2 h-80 relative border border-gray-300">
+                <iframe 
+                    class="w-full h-full border-0" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.814520938456!2d117.514!3d0.518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzEnMDguOCJOIDExN8KwMzAnNTAuNCJF!5e0!3m2!1sid!2sid!4v1650000000000!5m2!1sid!2sid" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-900 text-white py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-semibold text-base mb-2">Perpustakaan SMP Negeri 1 Rantau Pulung</p>
+            <p class="text-blue-200 mb-4">Jln. Ki Hajar Dewantara, Desa Kebon Agung, Kec. Rantau Pulung, Kab. Kutai Timur</p>
+            <p class="text-xs text-blue-300">&copy; 2026 PerpusTaka SMPN 1. "Lee_Heen" - Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
